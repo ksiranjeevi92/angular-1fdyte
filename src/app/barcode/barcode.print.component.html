@@ -1,0 +1,19 @@
+
+<div style="height: 46mm; width: 100mm;display: flex;flex-direction: column" *ngFor="let item of printData">
+  <div style="display: flex;flex: 60;flex-direction: column" *ngFor="let item2 of item.flowers">
+    <div style="display: flex;flex-direction: row; height: 5mm">
+      <div style="display: flex;flex: 15">{{item2.baseUoMCode}}</div>
+      <div style="display: flex;flex: 50">{{item2.description}}</div>
+      <div style="display: flex;flex: 15">{{item2.color}}</div>
+      <div style="display: flex;flex: 20">{{item2.size}}</div>
+    </div>
+  </div>
+  <div style="display: flex;flex: 40; flex-direction: row">
+    <div style="display: flex;">
+      <ngx-barcode [bc-width]="1.5" [bc-height]="50" [bc-value]="item.boxCode" [bc-display-value]="true"></ngx-barcode>
+    </div>
+    <div style="display: flex;">
+      <span style="padding-top: 10px; font-size: 32px">{{item.orderReference}}</span>
+    </div>
+  </div>
+</div>
