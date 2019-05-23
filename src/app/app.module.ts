@@ -5,9 +5,10 @@ import { NgxBarcodeModule } from 'ngx-barcode';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
+import {NgxPrintModule} from 'ngx-print';
 
 @NgModule({
-  imports:      [ NgxBarcodeModule, BrowserModule, FormsModule ],
+  imports:      [ NgxPrintModule, NgxBarcodeModule, BrowserModule, FormsModule ],
   declarations: [ AppComponent, HelloComponent ],
   bootstrap:    [ AppComponent ]
 })

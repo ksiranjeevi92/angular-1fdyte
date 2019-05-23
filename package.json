@@ -12,6 +12,7 @@
     "@angular/router": "^7.2.5",
     "core-js": "^2.6.5",
     "ngx-barcode": "^0.2.4",
+    "ngx-print": "^1.1.4",
     "rxjs": "^6.4.0",
     "zone.js": "^0.8.29"
   },
