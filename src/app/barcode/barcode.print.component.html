@@ -1,14 +1,14 @@
 
-<div style="height: 45mm; width: 100mm;display: flex;flex-direction: column" *ngFor="let item of printData">
+<!-- <div style="height: 45mm; width: 100mm;display: flex;flex-direction: column" *ngFor="let item of printData">
   <div style="display: flex;flex: 60;flex-direction: column" *ngFor="let item2 of item.flowers">
-    <div style="display: flex;flex-direction: row; height: 5mm">
+    <div style="display: flex;flex-direction: row;">
       <div style="display: flex;flex: 15">{{item2.baseUoMCode}}</div>
       <div style="display: flex;flex: 50">{{item2.description}}</div>
       <div style="display: flex;flex: 15">{{item2.color}}</div>
       <div style="display: flex;flex: 20">{{item2.size}}</div>
     </div>
   </div>
-  <div style="display: flex;flex: 40; flex-direction: row">
+  <div style="display: flex;flex: 40; flex-direction: row;" >
     <div style="display: flex;">
       <ngx-barcode [bc-width]="1.5" [bc-height]="50" [bc-value]="item.boxCode" [bc-display-value]="true"></ngx-barcode>
     </div>
@@ -16,4 +16,16 @@
       <span style="padding-top: 10px; font-size: 32px">{{item.orderReference}}</span>
     </div>
   </div>
+</div> -->
+
+<div id="container"  style="margin-top: 2mm; margin-bottom: 2mm;height: 45mm; width: 100mm;border: 1px solid black" *ngFor="let item of printData;let i=index">
+<div id="header" style="height: 30mm;">
+  <div  *ngFor="let item2 of item.flowers" style="display: flex;flex-direction: row;height: 7mm">
+     <div style="display: flex;flex: 15">{{item2.baseUoMCode}}</div>
+      <div style="display: flex;flex: 50">{{item2.description}}</div>
+      <div style="display: flex;flex: 15">{{item2.color}}</div>
+      <div style="display: flex;flex: 20">{{item2.size}}</div>
+  </div>
+</div>
+<div id="body" style="height: 15mm"></div>
 </div>

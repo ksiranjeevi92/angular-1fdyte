@@ -65,269 +65,269 @@ export class BarCodePrintComponent  {
                 }
             ]
         },
-        // {
-        //     "boxId": 8,
-        //     "boxCode": "SUBUNRMI000008",
-        //     "totalPackQuantity": 12,
-        //     "totalBaseQuantity": 120,
-        //     "orderReference": "BTD",
-        //     "boxStatus": 1,
-        //     "growerCode": "SUB",
-        //     "dayStamp": null,
-        //     "boxType": "",
-        //     "flowers": [
-        //         {
-        //             "boxFlowerId": 8,
-        //             "itemCode": "F100081",
-        //             "description": "Rose - PIN",
-        //             "color": "PIN",
-        //             "size": "60 CM",
-        //             "packUoMCode": "BUNCH10",
-        //             "baseUoMCode": "STEM",
-        //             "packQuantity": 6,
-        //             "baseQuantity": 60
-        //         },
-        //         {
-        //             "boxFlowerId": 9,
-        //             "itemCode": "F100083",
-        //             "description": "Rose - PIN",
-        //             "color": "PIN",
-        //             "size": "80 CM",
-        //             "packUoMCode": "BUNCH10",
-        //             "baseUoMCode": "STEM",
-        //             "packQuantity": 6,
-        //             "baseQuantity": 60
-        //         }
-        //     ]
-        // },
-        // {
-        //     "boxId": 8,
-        //     "boxCode": "SUBUNRMI000008",
-        //     "totalPackQuantity": 12,
-        //     "totalBaseQuantity": 120,
-        //     "orderReference": "BTD",
-        //     "boxStatus": 1,
-        //     "growerCode": "SUB",
-        //     "dayStamp": null,
-        //     "boxType": "",
-        //     "flowers": [
-        //         {
-        //             "boxFlowerId": 8,
-        //             "itemCode": "F100081",
-        //             "description": "Rose - PIN",
-        //             "color": "PIN",
-        //             "size": "60 CM",
-        //             "packUoMCode": "BUNCH10",
-        //             "baseUoMCode": "STEM",
-        //             "packQuantity": 6,
-        //             "baseQuantity": 60
-        //         },
-        //         {
-        //             "boxFlowerId": 9,
-        //             "itemCode": "F100083",
-        //             "description": "Rose - PIN",
-        //             "color": "PIN",
-        //             "size": "80 CM",
-        //             "packUoMCode": "BUNCH10",
-        //             "baseUoMCode": "STEM",
-        //             "packQuantity": 6,
-        //             "baseQuantity": 60
-        //         },
-        //          {
-        //             "boxFlowerId": 8,
-        //             "itemCode": "F100081",
-        //             "description": "Rose - PIN",
-        //             "color": "PIN",
-        //             "size": "60 CM",
-        //             "packUoMCode": "BUNCH10",
-        //             "baseUoMCode": "STEM",
-        //             "packQuantity": 6,
-        //             "baseQuantity": 60
-        //         },
-        //         {
-        //             "boxFlowerId": 9,
-        //             "itemCode": "F100083",
-        //             "description": "Rose - PIN",
-        //             "color": "PIN",
-        //             "size": "80 CM",
-        //             "packUoMCode": "BUNCH10",
-        //             "baseUoMCode": "STEM",
-        //             "packQuantity": 6,
-        //             "baseQuantity": 60
-        //         }
-        //     ]
-        // },
-        // {
-        //     "boxId": 8,
-        //     "boxCode": "SUBUNRMI000008",
-        //     "totalPackQuantity": 12,
-        //     "totalBaseQuantity": 120,
-        //     "orderReference": "BTD",
-        //     "boxStatus": 1,
-        //     "growerCode": "SUB",
-        //     "dayStamp": null,
-        //     "boxType": "",
-        //     "flowers": [
-        //         {
-        //             "boxFlowerId": 8,
-        //             "itemCode": "F100081",
-        //             "description": "Rose - PIN",
-        //             "color": "PIN",
-        //             "size": "60 CM",
-        //             "packUoMCode": "BUNCH10",
-        //             "baseUoMCode": "STEM",
-        //             "packQuantity": 6,
-        //             "baseQuantity": 60
-        //         },
-        //         {
-        //             "boxFlowerId": 9,
-        //             "itemCode": "F100083",
-        //             "description": "Rose - PIN",
-        //             "color": "PIN",
-        //             "size": "80 CM",
-        //             "packUoMCode": "BUNCH10",
-        //             "baseUoMCode": "STEM",
-        //             "packQuantity": 6,
-        //             "baseQuantity": 60
-        //         },
-        //          {
-        //             "boxFlowerId": 8,
-        //             "itemCode": "F100081",
-        //             "description": "Rose - PIN",
-        //             "color": "PIN",
-        //             "size": "60 CM",
-        //             "packUoMCode": "BUNCH10",
-        //             "baseUoMCode": "STEM",
-        //             "packQuantity": 6,
-        //             "baseQuantity": 60
-        //         },
-        //         {
-        //             "boxFlowerId": 9,
-        //             "itemCode": "F100083",
-        //             "description": "Rose - PIN",
-        //             "color": "PIN",
-        //             "size": "80 CM",
-        //             "packUoMCode": "BUNCH10",
-        //             "baseUoMCode": "STEM",
-        //             "packQuantity": 6,
-        //             "baseQuantity": 60
-        //         }
-        //     ]
-        // },
-        // {
-        //     "boxId": 8,
-        //     "boxCode": "SUBUNRMI000008",
-        //     "totalPackQuantity": 12,
-        //     "totalBaseQuantity": 120,
-        //     "orderReference": "BTD",
-        //     "boxStatus": 1,
-        //     "growerCode": "SUB",
-        //     "dayStamp": null,
-        //     "boxType": "",
-        //     "flowers": [
-        //         {
-        //             "boxFlowerId": 8,
-        //             "itemCode": "F100081",
-        //             "description": "Rose - PIN",
-        //             "color": "PIN",
-        //             "size": "60 CM",
-        //             "packUoMCode": "BUNCH10",
-        //             "baseUoMCode": "STEM",
-        //             "packQuantity": 6,
-        //             "baseQuantity": 60
-        //         },
-        //         {
-        //             "boxFlowerId": 9,
-        //             "itemCode": "F100083",
-        //             "description": "Rose - PIN",
-        //             "color": "PIN",
-        //             "size": "80 CM",
-        //             "packUoMCode": "BUNCH10",
-        //             "baseUoMCode": "STEM",
-        //             "packQuantity": 6,
-        //             "baseQuantity": 60
-        //         },
-        //          {
-        //             "boxFlowerId": 8,
-        //             "itemCode": "F100081",
-        //             "description": "Rose - PIN",
-        //             "color": "PIN",
-        //             "size": "60 CM",
-        //             "packUoMCode": "BUNCH10",
-        //             "baseUoMCode": "STEM",
-        //             "packQuantity": 6,
-        //             "baseQuantity": 60
-        //         },
-        //         {
-        //             "boxFlowerId": 9,
-        //             "itemCode": "F100083",
-        //             "description": "Rose - PIN",
-        //             "color": "PIN",
-        //             "size": "80 CM",
-        //             "packUoMCode": "BUNCH10",
-        //             "baseUoMCode": "STEM",
-        //             "packQuantity": 6,
-        //             "baseQuantity": 60
-        //         }
-        //     ]
-        // },
-        // {
-        //     "boxId": 8,
-        //     "boxCode": "SUBUNRMI000008",
-        //     "totalPackQuantity": 12,
-        //     "totalBaseQuantity": 120,
-        //     "orderReference": "BTD",
-        //     "boxStatus": 1,
-        //     "growerCode": "SUB",
-        //     "dayStamp": null,
-        //     "boxType": "",
-        //     "flowers": [
-        //         {
-        //             "boxFlowerId": 8,
-        //             "itemCode": "F100081",
-        //             "description": "Rose - PIN",
-        //             "color": "PIN",
-        //             "size": "60 CM",
-        //             "packUoMCode": "BUNCH10",
-        //             "baseUoMCode": "STEM",
-        //             "packQuantity": 6,
-        //             "baseQuantity": 60
-        //         },
-        //         {
-        //             "boxFlowerId": 9,
-        //             "itemCode": "F100083",
-        //             "description": "Rose - PIN",
-        //             "color": "PIN",
-        //             "size": "80 CM",
-        //             "packUoMCode": "BUNCH10",
-        //             "baseUoMCode": "STEM",
-        //             "packQuantity": 6,
-        //             "baseQuantity": 60
-        //         },
-        //          {
-        //             "boxFlowerId": 8,
-        //             "itemCode": "F100081",
-        //             "description": "Rose - PIN",
-        //             "color": "PIN",
-        //             "size": "60 CM",
-        //             "packUoMCode": "BUNCH10",
-        //             "baseUoMCode": "STEM",
-        //             "packQuantity": 6,
-        //             "baseQuantity": 60
-        //         },
-        //         {
-        //             "boxFlowerId": 9,
-        //             "itemCode": "F100083",
-        //             "description": "Rose - PIN",
-        //             "color": "PIN",
-        //             "size": "80 CM",
-        //             "packUoMCode": "BUNCH10",
-        //             "baseUoMCode": "STEM",
-        //             "packQuantity": 6,
-        //             "baseQuantity": 60
-        //         }
-        //     ]
-        // },
+        {
+            "boxId": 8,
+            "boxCode": "SUBUNRMI000008",
+            "totalPackQuantity": 12,
+            "totalBaseQuantity": 120,
+            "orderReference": "BTD",
+            "boxStatus": 1,
+            "growerCode": "SUB",
+            "dayStamp": null,
+            "boxType": "",
+            "flowers": [
+                {
+                    "boxFlowerId": 8,
+                    "itemCode": "F100081",
+                    "description": "Rose - PIN",
+                    "color": "PIN",
+                    "size": "60 CM",
+                    "packUoMCode": "BUNCH10",
+                    "baseUoMCode": "STEM",
+                    "packQuantity": 6,
+                    "baseQuantity": 60
+                },
+                {
+                    "boxFlowerId": 9,
+                    "itemCode": "F100083",
+                    "description": "Rose - PIN",
+                    "color": "PIN",
+                    "size": "80 CM",
+                    "packUoMCode": "BUNCH10",
+                    "baseUoMCode": "STEM",
+                    "packQuantity": 6,
+                    "baseQuantity": 60
+                }
+            ]
+        },
+        {
+            "boxId": 8,
+            "boxCode": "SUBUNRMI000008",
+            "totalPackQuantity": 12,
+            "totalBaseQuantity": 120,
+            "orderReference": "BTD",
+            "boxStatus": 1,
+            "growerCode": "SUB",
+            "dayStamp": null,
+            "boxType": "",
+            "flowers": [
+                {
+                    "boxFlowerId": 8,
+                    "itemCode": "F100081",
+                    "description": "Rose - PIN",
+                    "color": "PIN",
+                    "size": "60 CM",
+                    "packUoMCode": "BUNCH10",
+                    "baseUoMCode": "STEM",
+                    "packQuantity": 6,
+                    "baseQuantity": 60
+                },
+                {
+                    "boxFlowerId": 9,
+                    "itemCode": "F100083",
+                    "description": "Rose - PIN",
+                    "color": "PIN",
+                    "size": "80 CM",
+                    "packUoMCode": "BUNCH10",
+                    "baseUoMCode": "STEM",
+                    "packQuantity": 6,
+                    "baseQuantity": 60
+                },
+                 {
+                    "boxFlowerId": 8,
+                    "itemCode": "F100081",
+                    "description": "Rose - PIN",
+                    "color": "PIN",
+                    "size": "60 CM",
+                    "packUoMCode": "BUNCH10",
+                    "baseUoMCode": "STEM",
+                    "packQuantity": 6,
+                    "baseQuantity": 60
+                },
+                {
+                    "boxFlowerId": 9,
+                    "itemCode": "F100083",
+                    "description": "Rose - PIN",
+                    "color": "PIN",
+                    "size": "80 CM",
+                    "packUoMCode": "BUNCH10",
+                    "baseUoMCode": "STEM",
+                    "packQuantity": 6,
+                    "baseQuantity": 60
+                }
+            ]
+        },
+        {
+            "boxId": 8,
+            "boxCode": "SUBUNRMI000008",
+            "totalPackQuantity": 12,
+            "totalBaseQuantity": 120,
+            "orderReference": "BTD",
+            "boxStatus": 1,
+            "growerCode": "SUB",
+            "dayStamp": null,
+            "boxType": "",
+            "flowers": [
+                {
+                    "boxFlowerId": 8,
+                    "itemCode": "F100081",
+                    "description": "Rose - PIN",
+                    "color": "PIN",
+                    "size": "60 CM",
+                    "packUoMCode": "BUNCH10",
+                    "baseUoMCode": "STEM",
+                    "packQuantity": 6,
+                    "baseQuantity": 60
+                },
+                {
+                    "boxFlowerId": 9,
+                    "itemCode": "F100083",
+                    "description": "Rose - PIN",
+                    "color": "PIN",
+                    "size": "80 CM",
+                    "packUoMCode": "BUNCH10",
+                    "baseUoMCode": "STEM",
+                    "packQuantity": 6,
+                    "baseQuantity": 60
+                },
+                 {
+                    "boxFlowerId": 8,
+                    "itemCode": "F100081",
+                    "description": "Rose - PIN",
+                    "color": "PIN",
+                    "size": "60 CM",
+                    "packUoMCode": "BUNCH10",
+                    "baseUoMCode": "STEM",
+                    "packQuantity": 6,
+                    "baseQuantity": 60
+                },
+                {
+                    "boxFlowerId": 9,
+                    "itemCode": "F100083",
+                    "description": "Rose - PIN",
+                    "color": "PIN",
+                    "size": "80 CM",
+                    "packUoMCode": "BUNCH10",
+                    "baseUoMCode": "STEM",
+                    "packQuantity": 6,
+                    "baseQuantity": 60
+                }
+            ]
+        },
+        {
+            "boxId": 8,
+            "boxCode": "SUBUNRMI000008",
+            "totalPackQuantity": 12,
+            "totalBaseQuantity": 120,
+            "orderReference": "BTD",
+            "boxStatus": 1,
+            "growerCode": "SUB",
+            "dayStamp": null,
+            "boxType": "",
+            "flowers": [
+                {
+                    "boxFlowerId": 8,
+                    "itemCode": "F100081",
+                    "description": "Rose - PIN",
+                    "color": "PIN",
+                    "size": "60 CM",
+                    "packUoMCode": "BUNCH10",
+                    "baseUoMCode": "STEM",
+                    "packQuantity": 6,
+                    "baseQuantity": 60
+                },
+                {
+                    "boxFlowerId": 9,
+                    "itemCode": "F100083",
+                    "description": "Rose - PIN",
+                    "color": "PIN",
+                    "size": "80 CM",
+                    "packUoMCode": "BUNCH10",
+                    "baseUoMCode": "STEM",
+                    "packQuantity": 6,
+                    "baseQuantity": 60
+                },
+                 {
+                    "boxFlowerId": 8,
+                    "itemCode": "F100081",
+                    "description": "Rose - PIN",
+                    "color": "PIN",
+                    "size": "60 CM",
+                    "packUoMCode": "BUNCH10",
+                    "baseUoMCode": "STEM",
+                    "packQuantity": 6,
+                    "baseQuantity": 60
+                },
+                {
+                    "boxFlowerId": 9,
+                    "itemCode": "F100083",
+                    "description": "Rose - PIN",
+                    "color": "PIN",
+                    "size": "80 CM",
+                    "packUoMCode": "BUNCH10",
+                    "baseUoMCode": "STEM",
+                    "packQuantity": 6,
+                    "baseQuantity": 60
+                }
+            ]
+        },
+        {
+            "boxId": 8,
+            "boxCode": "SUBUNRMI000008",
+            "totalPackQuantity": 12,
+            "totalBaseQuantity": 120,
+            "orderReference": "BTD",
+            "boxStatus": 1,
+            "growerCode": "SUB",
+            "dayStamp": null,
+            "boxType": "",
+            "flowers": [
+                {
+                    "boxFlowerId": 8,
+                    "itemCode": "F100081",
+                    "description": "Rose - PIN",
+                    "color": "PIN",
+                    "size": "60 CM",
+                    "packUoMCode": "BUNCH10",
+                    "baseUoMCode": "STEM",
+                    "packQuantity": 6,
+                    "baseQuantity": 60
+                },
+                {
+                    "boxFlowerId": 9,
+                    "itemCode": "F100083",
+                    "description": "Rose - PIN",
+                    "color": "PIN",
+                    "size": "80 CM",
+                    "packUoMCode": "BUNCH10",
+                    "baseUoMCode": "STEM",
+                    "packQuantity": 6,
+                    "baseQuantity": 60
+                },
+                 {
+                    "boxFlowerId": 8,
+                    "itemCode": "F100081",
+                    "description": "Rose - PIN",
+                    "color": "PIN",
+                    "size": "60 CM",
+                    "packUoMCode": "BUNCH10",
+                    "baseUoMCode": "STEM",
+                    "packQuantity": 6,
+                    "baseQuantity": 60
+                },
+                {
+                    "boxFlowerId": 9,
+                    "itemCode": "F100083",
+                    "description": "Rose - PIN",
+                    "color": "PIN",
+                    "size": "80 CM",
+                    "packUoMCode": "BUNCH10",
+                    "baseUoMCode": "STEM",
+                    "packQuantity": 6,
+                    "baseQuantity": 60
+                }
+            ]
+        },
         ];
   
 
