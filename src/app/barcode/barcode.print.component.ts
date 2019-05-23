@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'barcode-print',
-  templateUrl: './barcode-print.component.html',
-  styleUrls: [ './barcode-print.component.scss' ]
+  templateUrl: './barcode.print.component.html',
+  styleUrls: [ './barcode.print.component.scss' ]
 })
 export class BarCodePrintComponent  {
   name = 'Angular';
