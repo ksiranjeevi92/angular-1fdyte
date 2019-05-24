@@ -455,16 +455,17 @@ function funcCode128B(strText) {
   @media print{
         body {
         margin-top:2mm !important;
-        margin-right: 3mm;
-        margin-left: 3mm;
-        margin-bottom: 2mm !important}
+        margin-right: 0 !important;
+        margin-left: 2mm !important;
+        margin-bottom: 2mm !important
+        }
       @page {
         margin: 0 !important;
       }
       html,body {
             page-break-after: avoid;
             page-break-before: avoid;
-            height: 46mm;
+            height: 42mm;
             width: 100mm;
       }
     }
@@ -482,9 +483,9 @@ function funcCode128B(strText) {
 <body>
 ${this.printData.map((item, i) => `
   ${funcCode128B(item.boxCode)}
-     	<div id="container" class="container" style="overflow: ellipsis;width: 94mm;">
+     	<div id="container" class="container" style="overflow: ellipsis;width: 98mm;margin-left: 3mm">
   
-		<div id="header" style="height: 25mm;">
+		<div id="header" style="height: 23mm;padding-top: 2mm;">
           ${item.flowers.map((item2, i) => `
     	<div style="display: flex;flex-direction: row;font-family: Arial;overflow: ellipsis">
 				<div style="display: flex;flex: 15;margin-left: 3px;">${item2.baseUoMCode}</div>
@@ -495,15 +496,17 @@ ${this.printData.map((item, i) => `
   `.trim()).join('')}
 		
 		</div>
-		<div style="height: 21mm;display: flex;flex-drection: row">
-			<div style="display:flex;flex: 68;flex-direction: column">
-      <span style="margin-left: 4px">${genBarcode(strRaw, 6.2, 50)}</span>
-	    <span style="text-align: center; font-family: Arial Black;
-      font-size: 18px">${item.boxCode}</span>
+		<div style="height: 19mm;display: flex;flex-drection: row;">
+			<div style="display:flex;flex: 71;flex-direction: column;">
+      <span style="margin-left: 4px">${genBarcode(strRaw, 6.3, 49)}</span>
+	    <span style="font-family: Arial Black;
+      font-size: 18px;;transform: scale(.8, 1.3);
+      letter-spacing: 4px    
+      ">${item.boxCode}</span>
       </div>
-			<div style="display: inline-flex;flex: 32;font-family: microsoft yahei;
-      font-size: 29px;font-weight: bold;overflow: hidden;font-kerning: none;
-       font-stretch: expanded;
+			<div style="display: inline-flex;flex: 29;font-family: microsoft yahei;
+      font-size: 26px;font-weight: bold;overflow: hidden;font-kerning: none;
+       font-stretch: expanded;transform: scale(.9, 1.5);padding-top: 12px;
       ">${item.orderReference}</div>
 		</div>
 	</div>
