@@ -16,7 +16,7 @@ export class AppComponent  {
             "boxCode": "SUBUNRMI000008",
             "totalPackQuantity": 12,
             "totalBaseQuantity": 120,
-            "orderReference": "BTD",
+            "orderReference": "ABCDEF",
             "boxStatus": 1,
             "growerCode": "SUB",
             "dayStamp": null,
@@ -492,13 +492,15 @@ ${this.printData.map((item, i) => `
 		
 		</div>
 		<div style="height: 19mm;display: flex;flex-drection: row">
-			<div style="display:flex;flex: 70;flex-direction: column;">
-      <span>${genBarcode(strRaw, 7, 50)}</span>
+			<div style="display:flex;flex: 68;flex-direction: column;">
+      <span>${genBarcode(strRaw, 6, 50)}</span>
 	    <span style="text-align: center; font-family: Arial Black;
       font-size: 18px">${item.boxCode}</span>
       </div>
-			<div style="display: flex;flex: 30;font-family: microsoft yahei;
-      font-size: 32px;font-weight: bold;align-items: center">${item.orderReference}</div>
+			<div style="display: inline-flex;flex: 32;font-family: microsoft yahei;
+      font-size: 29px;font-weight: bold;overflow: hidden;font-kerning: none;
+       font-stretch: expanded;
+      ">${item.orderReference}</div>
 		</div>
 	</div>
   `.trim()).join('')}
@@ -512,10 +514,10 @@ ${this.printData.map((item, i) => `
 
 var myWindow = window.open("", "BarCode Print");
 myWindow.document.write(printTemplate);
-setTimeout(() => {
-  myWindow.print();
-  myWindow.close();
-},10);
+// setTimeout(() => {
+//   myWindow.print();
+//   myWindow.close();
+// },10);
 return false;
   }
 }
