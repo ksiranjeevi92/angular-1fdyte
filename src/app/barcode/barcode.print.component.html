@@ -18,14 +18,18 @@
   </div>
 </div> -->
 
-<div id="container"  style="margin-top: 2mm; margin-bottom: 2mm;height: 45mm; width: 100mm;border: 1px solid black" *ngFor="let item of printData;let i=index">
-<div id="header" style="height: 30mm;">
-  <div  *ngFor="let item2 of item.flowers" style="display: flex;flex-direction: row;height: 7mm">
-     <div style="display: flex;flex: 15">{{item2.baseUoMCode}}</div>
-      <div style="display: flex;flex: 50">{{item2.description}}</div>
-      <div style="display: flex;flex: 15">{{item2.color}}</div>
-      <div style="display: flex;flex: 20">{{item2.size}}</div>
-  </div>
-</div>
-<div id="body" style="height: 15mm"></div>
-</div>
+ 	<div id="container" class="container" style="overflow: ellipsis;border: 1px solid black;width: 92mm"
+   *ngFor="let item of printData">
+		<div id="header" style="height: 30mm;">
+			<div style="display: flex;flex-direction: row;overflow: ellipsis">
+				<div style="display: flex;flex: 15">STEM</div>
+				<div style="display: flex;flex: 50">ROSE-PIN</div>
+				<div style="display: flex;flex: 15">PIN</div>
+				<div style="display: flex;flex: 20">60CM</div>
+			</div>
+		</div>
+		<div style="height: 12mm;display: flex;flex-drection: row">
+			<div style="display:flex;flex: 70">BarCode</div>
+			<div style="displya: flex;flex: 30">Description</div>
+		</div>
+	</div>
