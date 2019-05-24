@@ -480,7 +480,7 @@ ${this.printData.map((item, i) => `
   ${funcCode128B(item.boxCode)}
      	<div id="container" class="container" style="overflow: ellipsis;width: 92mm">
   
-		<div id="header" style="height: 26mm;">
+		<div id="header" style="height: 24mm;">
           ${item.flowers.map((item2, i) => `
     	<div style="display: flex;flex-direction: row;font-family: Arial;overflow: ellipsis">
 				<div style="display: flex;flex: 15">${item2.baseUoMCode}</div>
@@ -491,12 +491,13 @@ ${this.printData.map((item, i) => `
   `.trim()).join('')}
 		
 		</div>
-		<div style="height: 16mm;display: flex;flex-drection: row">
-			<div style="display:flex;flex: 70;flex-direction: column;font-family: Arial Black;background-color: black">
-      <span>${genBarcode(strRaw, 8, 65)}</span>
+		<div style="height: 18mm;display: flex;flex-drection: row">
+			<div style="display:flex;flex: 70;flex-direction: column;font-family: Arial Black;">
+      <span>${genBarcode(strRaw, 6, 60)}</span>
 	    <span style="text-align: center">${item.boxCode}</span>
       </div>
-			<div style="displya: flex;flex: 30;font-family: microsoft yahei">${item.orderReference}</div>
+			<div style="displya: flex;flex: 30;font-family: microsoft yahei;
+      font-size: 32px">${item.orderReference}</div>
 		</div>
 	</div>
   `.trim()).join('')}
