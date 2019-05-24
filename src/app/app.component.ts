@@ -1,7 +1,4 @@
 import { Component } from '@angular/core';
-// import JsBarcode from 'jsbarcode';
-
-let JsBarcode: any;
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
@@ -365,6 +362,8 @@ export class AppComponent  {
         padding: 0;
     }
 	</style>
+  <script>
+  </script>
 </head>
 
 <body>
