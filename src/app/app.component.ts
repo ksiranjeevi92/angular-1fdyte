@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+// import JsBarcode from 'jsbarcode';
+
+let JsBarcode: any;
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
@@ -362,7 +365,6 @@ export class AppComponent  {
         padding: 0;
     }
 	</style>
-
 </head>
 
 <body>
@@ -381,7 +383,9 @@ ${this.printData.map((item, i) => `
 		
 		</div>
 		<div style="height: 12mm;display: flex;flex-drection: row">
-			<div style="display:flex;flex: 70">${item.boxCode}</div>
+			<div style="display:flex;flex: 70">
+      <svg id="barcode"></svg>
+      </div>
 			<div style="displya: flex;flex: 30">${item.orderReference}</div>
 		</div>
 	</div>
