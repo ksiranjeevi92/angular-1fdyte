@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { NgxBarcodeModule } from 'ngx-barcode';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatFormFieldModule, MatSelectModule} from '@angular/material';
+import {MatButtonModule} from '@angular/material/button';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
@@ -18,7 +19,9 @@ import {BarCodePrintComponent} from './barcode/barcode.print.component';
        BrowserModule,
         FormsModule,
         MatFormFieldModule,
-        MatSelectModule
+        MatSelectModule,
+        MatButtonModule
+        
          ],
   declarations: [ BarCodePrintComponent, AppComponent, HelloComponent ],
   bootstrap:    [ AppComponent ]
