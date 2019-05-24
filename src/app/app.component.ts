@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 
+const BARCODE_TEMPLATE = `
+
+`;
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
@@ -7,4 +10,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular';
+
+  value = '';
 }
