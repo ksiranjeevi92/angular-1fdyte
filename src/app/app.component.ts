@@ -1,55 +1,4 @@
 import { Component } from '@angular/core';
-
-const BARCODE_TEMPLATE = `
-
-<html>
-
-<head>
-	<style>
-		body {
-			padding: 0;
-			margin: 0;
-			height: 50mm;
-			width: 100mm;
-		}
-
-		@media print {
-			body {
-				margin-top: 0 !important;
-				margin-right: 3mm;
-				margin-left: 3mm;
-			}
-			@page {
-				page-break-before: always;
-				margin-top: 4mm;
-				margin-bottom: 0 !important;
-				margin-left: 0 !important;
-				margin-right: 0 !important;
-				height: 50mm;
-			}
-		}
-	</style>
-</head>
-
-<body>
-	<div id="container" style="height: 46mm; width: 94mm;border: 1px solid black">
-		<div id="header" style="height: 30mm;">
-			<div style="display: flex;flex-direction: row;overflow: ellipsis">
-				<div style="display: flex;flex: 15">STEM</div>
-				<div style="display: flex;flex: 50">ROSE-PIN</div>
-				<div style="display: flex;flex: 15">PIN</div>
-				<div style="display: flex;flex: 20">60CM</div>
-			</div>
-		</div>
-		<div style="display: flex;flex-drection: row">
-			<div style="display:flex;flex: 70">BarCode</div>
-			<div style="displya: flex;flex: 30">Description</div>
-		</div>
-	</div>
-</body>
-
-</html>
-`;
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
@@ -58,7 +7,7 @@ const BARCODE_TEMPLATE = `
 export class AppComponent  {
   name = 'Angular';
 
-  value = '';
+  codeType = '';
 
    printData = 
       [{
@@ -385,16 +334,15 @@ export class AppComponent  {
   
 
   print() {
-    console.log(this.value);
     let printTemplate = '';
-    if(this.value === 'barCode'){
+    if(this.codeType === 'barCode'){
       printTemplate = `
 
 <html>
 
 <head>
 	<style>
-		body {
+		body, html {
 			padding: 0;
 			margin: 0;
 			height: 50mm;
@@ -403,7 +351,7 @@ export class AppComponent  {
 
 		@media print {
 			body {
-				margin-top: 0 !important;
+				margin-top: 2mm !important;
 				margin-right: 3mm;
 				margin-left: 3mm;
 			}
@@ -420,8 +368,8 @@ export class AppComponent  {
 </head>
 
 <body>
-${this.printData.map(elm => {
-  	`<div id="container" style="height: 46mm; width: 94mm;border: 1px solid black">
+
+  	<div id="container" style="height: 44mm; width: 94mm;border: 1px solid black">
 		<div id="header" style="height: 30mm;">
 			<div style="display: flex;flex-direction: row;overflow: ellipsis">
 				<div style="display: flex;flex: 15">STEM</div>
@@ -434,8 +382,8 @@ ${this.printData.map(elm => {
 			<div style="display:flex;flex: 70">BarCode</div>
 			<div style="displya: flex;flex: 30">Description</div>
 		</div>
-	</div>`
-})}
+	</div>
+
 </body>
 
 </html>
@@ -444,5 +392,8 @@ ${this.printData.map(elm => {
 
 var myWindow = window.open("", "BarCode Print");
 myWindow.document.write(printTemplate);
+// myWindow.print();
+// myWindow.close();
+return false;
   }
 }
