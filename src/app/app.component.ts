@@ -456,7 +456,7 @@ function funcCode128B(strText) {
         body {
         margin-top:2mm !important;
         margin-right: 0 !important;
-        margin-left: 2mm !important;
+        margin-left: 6mm !important;
         margin-bottom: 2mm !important
         }
       @page {
@@ -483,15 +483,16 @@ function funcCode128B(strText) {
 <body>
 ${this.printData.map((item, i) => `
   ${funcCode128B(item.boxCode)}
-     	<div id="container" class="container" style="overflow: ellipsis;width: 98mm;margin-left: 3mm">
+     	<div id="container" class="container" style="overflow: ellipsis;width: 94mm;margin-left: 3mm">
   
 		<div id="header" style="height: 23mm;padding-top: 2mm;">
           ${item.flowers.map((item2, i) => `
-    	<div style="display: flex;flex-direction: row;font-family: Arial;overflow: ellipsis">
-				<div style="display: flex;flex: 15;margin-left: 3px;">${item2.baseUoMCode}</div>
-				<div style="display: flex;flex: 50;margin-left: 3px;">${item2.description}</div>
-				<div style="display: flex;flex: 15;margin-left: 3px;">${item2.color}</div>
-				<div style="display: flex;flex: 20;margin-left: 3px;">${item2.size}</div>
+    	<div style="display: flex;flex-direction: row;font-family: Arial;overflow: ellipsis;line-height: 5.75mm">
+				<div style="display: flex;flex: 15;margin-left: 3px;justify-content: flex-end">${item2.baseUoMCode}</div>
+				<div style="display: flex;flex: 30;margin-left: 3px;justify-content: flex-end">${item2.description}</div>
+        <div style="display: flex;flex: 20"></div>
+				<div style="display: flex;flex: 15;margin-left: 3px;justify-content: flex-end">${item2.color}</div>
+				<div style="display: flex;flex: 20;margin-left: 3px;justify-content: flex-end">${item2.size}</div>
 			</div>
   `.trim()).join('')}
 		
@@ -499,14 +500,18 @@ ${this.printData.map((item, i) => `
 		<div style="height: 19mm;display: flex;flex-drection: row;">
 			<div style="display:flex;flex: 71;flex-direction: column;">
       <span style="margin-left: 4px">${genBarcode(strRaw, 6.3, 49)}</span>
+
 	    <span style="font-family: Arial Black;
-      font-size: 18px;;transform: scale(.8, 1.3);
-      letter-spacing: 4px    
+      font-size: 21px;
+      line-height: 17px;
+      margin-left: 10px;
+      letter-spacing: 1px;   
       ">${item.boxCode}</span>
+
       </div>
 			<div style="display: inline-flex;flex: 29;font-family: microsoft yahei;
-      font-size: 26px;font-weight: bold;overflow: hidden;font-kerning: none;
-       font-stretch: expanded;transform: scale(.9, 1.5);padding-top: 12px;
+      font-size: 25px;font-weight: bold;overflow: hidden;font-kerning: none;
+       font-stretch: expanded;transform: scale(.9, 1.6);padding-top: 12px;
       ">${item.orderReference}</div>
 		</div>
 	</div>
