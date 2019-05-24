@@ -342,34 +342,30 @@ export class AppComponent  {
 
 <head>
 	<style>
-		body, html {
-			padding: 0;
-			margin: 0;
-			height: 50mm;
-			width: 100mm;
-		}
-
-		@media print {
-			body {
-				margin-top: 2mm !important;
-				margin-right: 3mm;
-				margin-left: 3mm;
-			}
-			@page {
-				page-break-before: always;
-				margin-top: 4mm;
-				margin-bottom: 0 !important;
-				margin-left: 0 !important;
-				margin-right: 0 !important;
-				height: 50mm;
-			}
-		}
+  @media print{
+        body {margin-top:0 !important; margin-right: 4mm;margin-left: 4mm;}
+      @page {
+        margin: 0 !important;
+      }
+      html,body {
+            page-break-after: avoid;
+            page-break-before: avoid;
+            height: 42mm;
+            width: 100mm;
+      }
+    }
+    .container{
+        page-break-after:always;
+        margin-top: 4mm;
+        margin-bottom: 4mm;
+        padding: 0;
+    }
 	</style>
 </head>
 
 <body>
 
-  	<div id="container" style="height: 44mm; width: 94mm;border: 1px solid black">
+  	<div id="container" class="container" style="overflow: ellipsis;border: 1px solid black;width: 92mm">
 		<div id="header" style="height: 30mm;">
 			<div style="display: flex;flex-direction: row;overflow: ellipsis">
 				<div style="display: flex;flex: 15">STEM</div>
@@ -378,7 +374,7 @@ export class AppComponent  {
 				<div style="display: flex;flex: 20">60CM</div>
 			</div>
 		</div>
-		<div style="display: flex;flex-drection: row">
+		<div style="height: 12mm;display: flex;flex-drection: row">
 			<div style="display:flex;flex: 70">BarCode</div>
 			<div style="displya: flex;flex: 30">Description</div>
 		</div>
