@@ -364,21 +364,27 @@ export class AppComponent  {
 </head>
 
 <body>
-
-  	<div id="container" class="container" style="overflow: ellipsis;border: 1px solid black;width: 92mm">
+${this.printData.map((item, i) => `
+     	<div id="container" class="container" style="overflow: ellipsis;border: 1px solid black;width: 92mm">
+  
 		<div id="header" style="height: 30mm;">
-			<div style="display: flex;flex-direction: row;overflow: ellipsis">
+          ${item.flowers.map((item, i) => `
+    	<div style="display: flex;flex-direction: row;overflow: ellipsis">
 				<div style="display: flex;flex: 15">STEM</div>
 				<div style="display: flex;flex: 50">ROSE-PIN</div>
 				<div style="display: flex;flex: 15">PIN</div>
 				<div style="display: flex;flex: 20">60CM</div>
 			</div>
+  `.trim()).join('')}
+		
 		</div>
 		<div style="height: 12mm;display: flex;flex-drection: row">
 			<div style="display:flex;flex: 70">BarCode</div>
 			<div style="displya: flex;flex: 30">Description</div>
 		</div>
 	</div>
+  `.trim()).join('')}
+ 
 
 </body>
 
