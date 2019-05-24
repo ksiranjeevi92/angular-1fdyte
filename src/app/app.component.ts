@@ -453,21 +453,25 @@ function funcCode128B(strText) {
 <head>
 	<style>
   @media print{
-        body {margin-top:0 !important; margin-right: 4mm;margin-left: 4mm;}
+        body {
+        margin-top:2mm !important;
+        margin-right: 3mm;
+        margin-left: 3mm;
+        margin-bottom: 2mm !important}
       @page {
         margin: 0 !important;
       }
       html,body {
             page-break-after: avoid;
             page-break-before: avoid;
-            height: 42mm;
+            height: 46mm;
             width: 100mm;
       }
     }
     .container{
         page-break-after:always;
-        margin-top: 4mm;
-        margin-bottom: 4mm;
+        margin-top:0 !important;
+        margin-bottom: 0 !important;
         padding: 0;
     }
 	</style>
@@ -478,22 +482,22 @@ function funcCode128B(strText) {
 <body>
 ${this.printData.map((item, i) => `
   ${funcCode128B(item.boxCode)}
-     	<div id="container" class="container" style="overflow: ellipsis;width: 92mm">
+     	<div id="container" class="container" style="overflow: ellipsis;width: 94mm;">
   
-		<div id="header" style="height: 23mm;">
+		<div id="header" style="height: 25mm;">
           ${item.flowers.map((item2, i) => `
     	<div style="display: flex;flex-direction: row;font-family: Arial;overflow: ellipsis">
-				<div style="display: flex;flex: 15">${item2.baseUoMCode}</div>
-				<div style="display: flex;flex: 50">${item2.description}</div>
-				<div style="display: flex;flex: 15">${item2.color}</div>
-				<div style="display: flex;flex: 20">${item2.size}</div>
+				<div style="display: flex;flex: 15;margin-left: 3px;">${item2.baseUoMCode}</div>
+				<div style="display: flex;flex: 50;margin-left: 3px;">${item2.description}</div>
+				<div style="display: flex;flex: 15;margin-left: 3px;">${item2.color}</div>
+				<div style="display: flex;flex: 20;margin-left: 3px;">${item2.size}</div>
 			</div>
   `.trim()).join('')}
 		
 		</div>
-		<div style="height: 19mm;display: flex;flex-drection: row">
-			<div style="display:flex;flex: 68;flex-direction: column;">
-      <span>${genBarcode(strRaw, 6, 50)}</span>
+		<div style="height: 21mm;display: flex;flex-drection: row">
+			<div style="display:flex;flex: 68;flex-direction: column">
+      <span style="margin-left: 4px">${genBarcode(strRaw, 6.2, 50)}</span>
 	    <span style="text-align: center; font-family: Arial Black;
       font-size: 18px">${item.boxCode}</span>
       </div>
