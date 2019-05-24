@@ -487,31 +487,30 @@ ${this.printData.map((item, i) => `
   
 		<div id="header" style="height: 23mm;padding-top: 2mm;">
           ${item.flowers.map((item2, i) => `
-    	<div style="display: flex;flex-direction: row;font-family: Arial;overflow: ellipsis;line-height: 5.75mm">
-				<div style="display: flex;flex: 15;margin-left: 3px;justify-content: flex-end">${item2.baseUoMCode}</div>
-				<div style="display: flex;flex: 30;margin-left: 3px;justify-content: flex-end">${item2.description}</div>
+    	<div style="display: flex;flex-direction: row;font-family: Arial;overflow: ellipsis;line-height: 5mm">
+				<div style="display: flex;flex: 15;justify-content: flex-end">${item2.baseUoMCode}</div>
+				<div style="display: flex;flex: 30;justify-content: flex-end">${item2.description}</div>
         <div style="display: flex;flex: 20"></div>
-				<div style="display: flex;flex: 15;margin-left: 3px;justify-content: flex-end">${item2.color}</div>
-				<div style="display: flex;flex: 20;margin-left: 3px;justify-content: flex-end">${item2.size}</div>
+				<div style="display: flex;flex: 15;justify-content: flex-end">${item2.color}</div>
+				<div style="display: flex;flex: 20;justify-content: flex-end">${item2.size}</div>
 			</div>
   `.trim()).join('')}
 		
 		</div>
 		<div style="height: 19mm;display: flex;flex-drection: row;">
-			<div style="display:flex;flex: 71;flex-direction: column;">
-      <span style="margin-left: 4px">${genBarcode(strRaw, 6.3, 49)}</span>
+			<div style="display:flex;flex;flex-direction: column;">
+      <span style="margin-left: 4px">${genBarcode(strRaw, 9, 55)}</span>
 
 	    <span style="font-family: Arial Black;
       font-size: 21px;
-      line-height: 17px;
       margin-left: 10px;
       letter-spacing: 1px;   
       ">${item.boxCode}</span>
 
       </div>
-			<div style="display: inline-flex;flex: 29;font-family: microsoft yahei;
-      font-size: 25px;font-weight: bold;overflow: hidden;font-kerning: none;
-       font-stretch: expanded;transform: scale(.9, 1.6);padding-top: 12px;
+			<div style="display: inline-flex;flex;font-family: microsoft yahei;
+      font-size: 11px;font-weight: bold;overflow: hidden;font-kerning: none;
+       font-stretch: expanded;transform: scale(1.4, 3);padding-top: 23px;padding-left: 8px;
       ">${item.orderReference}</div>
 		</div>
 	</div>
@@ -526,10 +525,10 @@ ${this.printData.map((item, i) => `
 
 var myWindow = window.open("", "BarCode Print");
 myWindow.document.write(printTemplate);
-// setTimeout(() => {
-//   myWindow.print();
-//   myWindow.close();
-// },10);
+setTimeout(() => {
+  // myWindow.print();
+  // myWindow.close();
+},10);
 return false;
   }
 }
