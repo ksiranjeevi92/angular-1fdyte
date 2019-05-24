@@ -68,41 +68,41 @@ export class AppComponent  {
                 }
             ]
         },
-        // {
-        //     "boxId": 8,
-        //     "boxCode": "SUBUNRMI000008",
-        //     "totalPackQuantity": 12,
-        //     "totalBaseQuantity": 120,
-        //     "orderReference": "BTD",
-        //     "boxStatus": 1,
-        //     "growerCode": "SUB",
-        //     "dayStamp": null,
-        //     "boxType": "",
-        //     "flowers": [
-        //         {
-        //             "boxFlowerId": 8,
-        //             "itemCode": "F100081",
-        //             "description": "Rose - PIN",
-        //             "color": "PIN",
-        //             "size": "60 CM",
-        //             "packUoMCode": "BUNCH10",
-        //             "baseUoMCode": "STEM",
-        //             "packQuantity": 6,
-        //             "baseQuantity": 60
-        //         },
-        //         {
-        //             "boxFlowerId": 9,
-        //             "itemCode": "F100083",
-        //             "description": "Rose - PIN",
-        //             "color": "PIN",
-        //             "size": "80 CM",
-        //             "packUoMCode": "BUNCH10",
-        //             "baseUoMCode": "STEM",
-        //             "packQuantity": 6,
-        //             "baseQuantity": 60
-        //         }
-        //     ]
-        // },
+        {
+            "boxId": 8,
+            "boxCode": "SUBUNRMI000008",
+            "totalPackQuantity": 12,
+            "totalBaseQuantity": 120,
+            "orderReference": "BTD",
+            "boxStatus": 1,
+            "growerCode": "SUB",
+            "dayStamp": null,
+            "boxType": "",
+            "flowers": [
+                {
+                    "boxFlowerId": 8,
+                    "itemCode": "F100081",
+                    "description": "Rose - PIN",
+                    "color": "PIN",
+                    "size": "60 CM",
+                    "packUoMCode": "BUNCH10",
+                    "baseUoMCode": "STEM",
+                    "packQuantity": 6,
+                    "baseQuantity": 60
+                },
+                {
+                    "boxFlowerId": 9,
+                    "itemCode": "F100083",
+                    "description": "Rose - PIN",
+                    "color": "PIN",
+                    "size": "80 CM",
+                    "packUoMCode": "BUNCH10",
+                    "baseUoMCode": "STEM",
+                    "packQuantity": 6,
+                    "baseQuantity": 60
+                }
+            ]
+        },
         // {
         //     "boxId": 8,
         //     "boxCode": "SUBUNRMI000008",
@@ -361,6 +361,7 @@ function genBarcode(inputString, intWidth, intHeight) {
   for (i = 0; i < arraySeq.length; i += 1) {
 		resultString += stringStart + array5bit_A[arraySeq[i]] + stringMid + array5bit_B[arraySeq[i]] + stringEnd + intWidth + 'px;height:' + intHeight + 'px;">';
   }
+  // console.log(resultString)
   return resultString;
 }
 
@@ -479,9 +480,9 @@ ${this.printData.map((item, i) => `
   ${funcCode128B(item.boxCode)}
      	<div id="container" class="container" style="overflow: ellipsis;width: 92mm">
   
-		<div id="header" style="height: 30mm;">
+		<div id="header" style="height: 26mm;">
           ${item.flowers.map((item2, i) => `
-    	<div style="display: flex;flex-direction: row;overflow: ellipsis">
+    	<div style="display: flex;flex-direction: row;font-family: Arial;overflow: ellipsis">
 				<div style="display: flex;flex: 15">${item2.baseUoMCode}</div>
 				<div style="display: flex;flex: 50">${item2.description}</div>
 				<div style="display: flex;flex: 15">${item2.color}</div>
@@ -490,12 +491,12 @@ ${this.printData.map((item, i) => `
   `.trim()).join('')}
 		
 		</div>
-		<div style="height: 12mm;display: flex;flex-drection: row">
-			<div style="display:flex;flex: 70;flex-direction: column">
-      <span>${genBarcode(strRaw, 5, 40)}</span>
-	    <span>${item.boxCode}</span>
+		<div style="height: 16mm;display: flex;flex-drection: row">
+			<div style="display:flex;flex: 70;flex-direction: column;font-family: Arial Black;background-color: black">
+      <span>${genBarcode(strRaw, 8, 65)}</span>
+	    <span style="text-align: center">${item.boxCode}</span>
       </div>
-			<div style="displya: flex;flex: 30">${item.orderReference}</div>
+			<div style="displya: flex;flex: 30;font-family: microsoft yahei">${item.orderReference}</div>
 		</div>
 	</div>
   `.trim()).join('')}
@@ -509,8 +510,10 @@ ${this.printData.map((item, i) => `
 
 var myWindow = window.open("", "BarCode Print");
 myWindow.document.write(printTemplate);
-myWindow.print();
-myWindow.close();
+setTimeout(() => {
+  myWindow.print();
+},10);
+// myWindow.close();
 return false;
   }
 }
