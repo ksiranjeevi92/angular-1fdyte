@@ -152,26 +152,34 @@ ${this.printData.map((item, i) => `
   ${funcCode128B(item.boxCode)}
      	<div id="container" class="container" style="width: 96mm;">
   
-		<div id="header" style="height: 22mm;display: table; width: 362px;border-spacing: 4px;">
+		<div id="header" style="height: 22mm;display: table; width: 362px;border-spacing: 5px;">
       ${item.flowers.map((item2, i) => `
        <div style="max-height: 21mm;display: table-row;font-family: Arial, Helvetica, sans-serif;font-size: 13px;white-space: nowrap">
        <div style="display: table-cell;max-width: 45px;overflow: hidden; 
-       white-space: nowrap">
+       white-space: nowrap; ">
        <span style="display: flex;flex-direction: row;justify-content: flex-end;">${item2.baseQuantity}</span>
        </div>
-       <div style="display: table-cell;max-width: 202px;overflow: hidden;white-space: nowrap;text-align: center;">${item2.description}</div>
-       <div style="display: table-cell;max-width: 75px;overflow: hidden; 
-       white-space: nowrap;text-align: center">${item2.color}</div>
-       <div style="display: table-cell; max-width: 40px;overflow: hidden; 
-       white-space: nowrap;text-align: center">${item2.size}</div>
+
+
+       <div style="display: table-cell;max-width: 188px;overflow: hidden;white-space: nowrap; ">${item2.description}</div>
+
+
+       <div style="display: table-cell;max-width: 77px;overflow: hidden; 
+       white-space: nowrap; ">${item2.color}</div>
+
+
+       <div style="display: table-cell; max-width: 52px;overflow: hidden; 
+       white-space: nowrap; ">${item2.size}</div>
        </div>
+
+
       `.trim()).join('')}
     </div>
 
     
 	<div id="barcode" style="height: 20mm;display: table;width: 362px">
     <div style="display: table-row;width: 362px">
-    <div style="table-cell;max-width: 242px;background: red">
+    <div style="table-cell;max-width: 242px;">
     <div style="table-column;text-align: right">
     <span>${genBarcode(strRaw, 6, 50)}</span>
     </div>
@@ -186,7 +194,7 @@ ${this.printData.map((item, i) => `
 
     <div 
     style="display: table-cell;overflow: hidden;border-spacing: 0;
-     font-weight: bold;max-width: 116px;padding-left: 2px;background: yellow;
+     font-weight: bold;max-width: 116px;padding-left: 2px;
      white-space: nowrap;font-family: Arial Black;vertical-align: middle;
      text-align: left;letter-spacing: 0; transform: scaleY(1.4);">
      <span style="vertical-align: top;font-size: 16px;position: relative;bottom: 8
