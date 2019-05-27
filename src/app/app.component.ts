@@ -141,6 +141,7 @@ export class AppComponent {
         padding: 0;
         height: 42mm;
         margin-left: 0 !important;
+    
       }
 	</style>
   <script>
@@ -152,24 +153,28 @@ ${this.printData.map((item, i) => `
   ${funcCode128B(item.boxCode)}
      	<div id="container" class="container" style="width: 96mm;">
   
-		<div id="header" style="height: 22mm;display: table; width: 362px;border-spacing: 5px;">
+		<div id="header" style="height: 22mm;display: table; max-width: 362px; width: 362px;border-spacing: 5px;table-layout:fixed;">
       ${item.flowers.map((item2, i) => `
-       <div style="max-height: 21mm;display: table-row;font-family: Arial, Helvetica, sans-serif;font-size: 13px;white-space: nowrap">
-       <div style="display: table-cell;max-width: 45px;overflow: hidden; 
-       white-space: nowrap; ">
+       <div style="max-height: 21mm;display: table-row; max-width: 362px;width: 362px; font-family: Arial, Helvetica, sans-serif;font-size: 13px;white-space: nowrap">
+
+
+       <div style="display: table-cell;max-width: 45px;width: 45px;overflow: hidden; 
+       white-space: nowrap;text-overflow: ellipsis; ">
        <span style="display: flex;flex-direction: row;justify-content: flex-end;">${item2.baseQuantity}</span>
        </div>
 
 
-       <div style="display: table-cell;max-width: 188px;overflow: hidden;white-space: nowrap; ">${item2.description}</div>
+       <div style="display: table-cell;max-width: 188px;width: 188px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; ">${item2.description}</div>
 
 
-       <div style="display: table-cell;max-width: 77px;overflow: hidden; 
-       white-space: nowrap; ">${item2.color}</div>
+       <div style="display: table-cell;max-width: 77px;width: 77px;overflow: hidden; 
+       white-space: nowrap;text-overflow: ellipsis;">${item2.color}</div>
 
 
-       <div style="display: table-cell; max-width: 52px;overflow: hidden; 
-       white-space: nowrap; ">${item2.size}</div>
+       <div style="display: table-cell; max-width: 52px;width: 52px;overflow: hidden; 
+       white-space: nowrap;text-overflow: ellipsis;">${item2.size}</div>
+
+
        </div>
 
 
@@ -178,28 +183,27 @@ ${this.printData.map((item, i) => `
 
     
 	<div id="barcode" style="height: 20mm;display: table;width: 362px">
+
     <div style="display: table-row;width: 362px">
-    <div style="table-cell;max-width: 242px;">
-    <div style="table-column;text-align: right">
+    <div style="display: table-cell;max-width: 108pxpx;padding-left: 10px">
     <span>${genBarcode(strRaw, 6, 50)}</span>
-    </div>
-    <div style="table-column;text-align: center;margin-left: 2px;">
     <span style="letter-spacing: 3px;
     font-size: 18px;
     font-family: Arial Black">
     ${item.boxCode}
     </span>
-    </div>
+   
     </div>
 
     <div 
     style="display: table-cell;overflow: hidden;border-spacing: 0;
-     font-weight: bold;max-width: 116px;padding-left: 2px;
+     font-weight: bold;max-width: 110px;
      white-space: nowrap;font-family: Arial Black;vertical-align: middle;
-     text-align: left;letter-spacing: 0; transform: scaleY(1.4);">
-     <span style="vertical-align: top;font-size: 16px;position: relative;bottom: 8
-        ">${item.orderReference}</span>
-     </div>
+     transform: scaleY(1);padding-left: 5px;position: relative;bottom: 10;
+     ">${item.orderReference}</div>
+
+
+     <div style="display: table-cell;width: 100px"></div>
 
     </div>
     </div>

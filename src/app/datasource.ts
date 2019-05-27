@@ -195,8 +195,8 @@ export class DataSource{
          {
             "boxFlowerId":32,
             "itemCode":"F100001",
-            "description":"ROSE - Upper Class",
-            "color":"RED",
+            "description":"Chrysanthimum Artic Fur Deep Purple",
+            "color":"Dark purple",
             "size":"40 CM",
             "packUoMCode":"BUNCH10",
             "baseUoMCode":"STEM",
