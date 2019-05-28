@@ -136,12 +136,11 @@ export class AppComponent {
       }
       .container {
         page-break-after:always;
-        margin-top: 4mm;
-        margin-bottom: 4mm;
+        margin-top: 2mm!important;
+        margin-bottom: 2mm!important;
         padding: 0;
-        height: 42mm;
+        height: 46mm;
         margin-left: 0 !important;
-    
       }
 	</style>
   <script>
@@ -151,28 +150,38 @@ export class AppComponent {
 <body>
 ${this.printData.map((item, i) => `
   ${funcCode128B(item.boxCode)}
-     	<div id="container" class="container" style="width: 96mm;">
+     	<div id="container" class="container" style="width: 98mm;">
   
-		<div id="header" style="height: 22mm;display: table; max-width: 362px; width: 362px;border-spacing: 5px;table-layout:fixed;">
+		<div id="header" style="height: 24mm;display: table; max-width: 357px; width: 357px;border-spacing: 5px;table-layout:fixed;">
       ${item.flowers.map((item2, i) => `
-       <div style="max-height: 21mm;display: table-row; max-width: 362px;width: 362px; font-family: Arial, Helvetica, sans-serif;font-size: 13px;white-space: nowrap">
+       <div style="display: table-row;max-width: 357px;width: 357px; font-family: Arial, Helvetica, sans-serif;font-size: 13px;white-space: nowrap;">
 
 
-       <div style="display: table-cell;max-width: 45px;width: 45px;overflow: hidden; 
-       white-space: nowrap;text-overflow: ellipsis; ">
-       <span style="display: flex;flex-direction: row;justify-content: flex-end;">${item2.baseQuantity}</span>
+       <div style="display: table-cell;max-width: 34;width: 34px;overflow: hidden; 
+       white-space: nowrap;">
+           <span style="display: flex;flex-direction: row">
+               <span style="display: flex;flex: 60;justify-content: flex-end">${item2.baseQuantity}</span>
+               <span style="display: flex;flex: 40"></span>
+           </span>
        </div>
 
 
-       <div style="display: table-cell;max-width: 188px;width: 188px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; ">${item2.description}</div>
+       <div style="display: table-cell;max-width: 218;width: 218px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;">
+       ${item2.description}
+       </div>
 
 
-       <div style="display: table-cell;max-width: 77px;width: 77px;overflow: hidden; 
-       white-space: nowrap;text-overflow: ellipsis;">${item2.color}</div>
+       <div style="display: table-cell;max-width: 42px;width: 42px;overflow: hidden; 
+       white-space: nowrap;">${item2.color}
+       </div>
 
 
-       <div style="display: table-cell; max-width: 52px;width: 52px;overflow: hidden; 
-       white-space: nowrap;text-overflow: ellipsis;">${item2.size}</div>
+       <div style="display: table-cell;max-width: 54px;width: 51px;overflow: hidden;white-space: nowrap;">
+          <span style="display: flex;flex-direction: row;">
+              <span style="display: flex;flex: 30;"></span>
+              <span style="display: flex;flex: 70;justify-content: flex-end;">${item2.size}</span>
+          </span>
+       </div>
 
 
        </div>
@@ -182,7 +191,7 @@ ${this.printData.map((item, i) => `
     </div>
 
     
-	<div id="barcode" style="height: 20mm;display: table;width: 362px">
+	<div id="barcode" style="height: 22mm;display: table;width: 362px">
 
     <div style="display: table-row;width: 362px">
     <div style="display: table-cell;max-width: 108pxpx;padding-left: 10px">
@@ -199,7 +208,7 @@ ${this.printData.map((item, i) => `
     style="display: table-cell;overflow: hidden;border-spacing: 0;
      font-weight: bold;max-width: 110px;
      white-space: nowrap;font-family: Arial Black;vertical-align: middle;
-     transform: scaleY(1);padding-left: 5px;position: relative;bottom: 10;
+     transform: scaleY(1.4);padding-left: 5px;position: relative;bottom: 10;font-size: 16px;
      ">${item.orderReference}</div>
 
 
